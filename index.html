@@ -10,6 +10,8 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
@@ -19,6 +21,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet"/>
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body id="page-top">
 <!-- Navigation-->
@@ -221,7 +228,7 @@
             <h3 class="section-subheading text-muted"></h3>
         </div>
         <div class="row">
-            <div class="col-lg-3">
+            <div class="carousel">
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="assets/img/partners/koinos-italia.jpg" alt="..."/>
                     <h4>Koinos Italia</h4>
@@ -231,8 +238,6 @@
                     <a class="btn btn-dark btn-social mx-2" href="https://t.me/KoinosItalia"
                        aria-label="Koinos Italia Telegram" target="_blank"><i class="fab fa-telegram"></i></a>
                 </div>
-            </div>
-            <div class="col-lg-3">
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="assets/img/partners/konio.jpg" alt="..."/>
                     <h4>Konio Wallet</h4>
@@ -241,41 +246,41 @@
                        target="_blank"><i class="fa fa-globe"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/konio_io"
                        aria-label="Konio Twitter Profile" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://t.me/konio_io" aria-label="Konio Telegram"
+                    <a class="btn btn-dark btn-social mx-2" href="https://t.me/konio_io"
+                       aria-label="Konio Telegram"
                        target="_blank"><i class="fab fa-telegram"></i></a>
                     <a class="btn btn-dark btn-social mx-2"
-                       href="https://play.google.com/store/apps/details?id=konio.io&pli=1" aria-label="Konio GooglePlay"
+                       href="https://play.google.com/store/apps/details?id=konio.io&pli=1"
+                       aria-label="Konio GooglePlay"
                        target="_blank"><i class="fab fa-google-play"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="https://apps.apple.com/app/konio/id6453561342"
                        aria-label="Konio AppStore" target="_blank"><i class="fab fa-app-store"></i></a>
                 </div>
-            </div>
-            <div class="col-lg-3">
                 <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="assets/img/partners/koinos-federation.png" alt="..."/>
+                    <img class="mx-auto rounded-circle" src="assets/img/partners/koinos-federation.png"
+                         alt="..."/>
                     <h4>Koinos Federation</h4>
                     <p class="text-muted"></p>
                     <a class="btn btn-dark btn-social mx-2" href="https://koinosfederation.com"
                        aria-label="Koinos Federation Website" target="_blank"><i class="fa fa-globe"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/KoinosFed"
-                       aria-label="Koinos Federation Twitter Profile" target="_blank"><i class="fab fa-twitter"></i></a>
+                       aria-label="Koinos Federation Twitter Profile" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="https://t.me/+wPbx43qXGxlhMmYx"
-                       aria-label="Koinos Federation Telegram" target="_blank"><i class="fab fa-telegram"></i></a>
+                       aria-label="Koinos Federation Telegram" target="_blank"><i
+                            class="fab fa-telegram"></i></a>
                 </div>
-            </div>
-            <div class="col-lg-3">
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="assets/img/partners/koin-crew-logo-square.png"
                          style="border-radius: 0% !important;" alt="..."/>
                     <h4>Koin Crew</h4>
                     <p class="text-muted"></p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://koincrew.com/" aria-label="Koin Crew Website"
+                    <a class="btn btn-dark btn-social mx-2" href="https://koincrew.com/"
+                       aria-label="Koin Crew Website"
                        target="_blank"><i class="fa fa-globe"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/KoinCrew"
                        aria-label="Koin Crew Twitter Profile" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
-            </div>
-            <div class="col-lg-3">
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="assets/img/partners/koinos-garden.jpg" alt="..."/>
                     <h4>Koinos Garden</h4>
@@ -283,15 +288,19 @@
                     <a class="btn btn-dark btn-social mx-2" href="https://koinosgarden.com"
                        aria-label="Koinos Garden Website" target="_blank"><i class="fa fa-globe"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="https://dsc.gg/koinosgarden"
-                       aria-label="Koinos Garden Website" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                       aria-label="Koinos Garden Website" target="_blank"><i
+                            class="fa-brands fa-discord"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/koinosgarden"
                        aria-label="Koinos Garden Twitter Profile" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"></p></div>
-        </div>
+    </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"></p></div>
+    </div>
     </div>
 </section>
 <!-- Clients-->

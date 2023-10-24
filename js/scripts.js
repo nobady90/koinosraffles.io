@@ -5,7 +5,7 @@
 */
 //
 // Scripts
-// 
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#mainNav',
             rootMargin: '0px 0px -40%',
         });
-    };
+    }
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -48,6 +48,38 @@ window.addEventListener('DOMContentLoaded', event => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
             }
+        });
+    });
+
+    // Slick Carousel
+    $(document).ready(function () {
+        $('.carousel').slick({
+            // centerMode: true,
+            // centerPadding: '60px',
+            dots: true, // Mostra i punti di navigazione
+            arrow: true,
+            slidesToShow: 3, // Mostra due team-member alla volta
+            slidesToScroll: 1, // Scorri un team-member alla volta
+            autoplay: false,
+            infinite: true, // Loop infinito
+            autoplaySpeed: 2000, // Velocità di scorrimento
+
+            responsive: [
+                {
+                    breakpoint: 768, // Per schermi con larghezza minore di 768px
+                    settings: {
+                        slidesToShow: 1, // Mostra 1 elemento alla volta su schermi più piccoli
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 992, // Per schermi con larghezza minore di 992px
+                    settings: {
+                        slidesToShow: 2, // Mostra 2 elementi alla volta su schermi di larghezza media
+                        slidesToScroll: 2
+                    }
+                }
+            ]
         });
     });
 
