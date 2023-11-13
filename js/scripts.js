@@ -56,8 +56,8 @@ window.addEventListener('DOMContentLoaded', event => {
         $('.carousel').slick({
             dots: true, // Mostra i punti di navigazione
             arrows: false,
-            slidesToShow: 3, // Mostra due team-member alla volta
-            slidesToScroll: 1, // Scorri un team-member alla volta
+            slidesToShow: 3, // Mostra due partners-member alla volta
+            slidesToScroll: 1, // Scorri un partners-member alla volta
             autoplay: true,
             infinite: true, // Loop infinito
             autoplaySpeed: 2000, // Velocità di scorrimento
