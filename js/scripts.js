@@ -54,22 +54,19 @@ window.addEventListener('DOMContentLoaded', event => {
     // Slick Carousel
     $(document).ready(function () {
         $('.carousel').slick({
-            // centerMode: true,
-            // centerPadding: '60px',
             dots: true, // Mostra i punti di navigazione
-            arrow: true,
+            arrows: false,
             slidesToShow: 3, // Mostra due team-member alla volta
             slidesToScroll: 1, // Scorri un team-member alla volta
-            autoplay: false,
+            autoplay: true,
             infinite: true, // Loop infinito
             autoplaySpeed: 2000, // Velocità di scorrimento
-
             responsive: [
                 {
                     breakpoint: 768, // Per schermi con larghezza minore di 768px
                     settings: {
                         slidesToShow: 1, // Mostra 1 elemento alla volta su schermi più piccoli
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
                     }
                 },
                 {
